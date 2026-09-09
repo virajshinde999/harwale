@@ -1,0 +1,328 @@
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  overflow: hidden;
+
+  background: #fffdf9;
+
+  border: 1px solid rgba(181, 107, 37, 0.13);
+  border-radius: 26px;
+
+  box-shadow:
+    0 12px 35px rgba(36, 26, 20, 0.055);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 20px 50px rgba(36, 26, 20, 0.10);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.product-image {
+  position: relative;
+
+  overflow: hidden;
+
+  aspect-ratio: 1.15 / 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.product-tag {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  padding: 7px 11px;
+
+  border: 1px solid rgba(181, 107, 37, 0.15);
+  border-radius: 100px;
+
+  background: rgba(255, 250, 242, 0.93);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.1px;
+
+  color: #8f572c;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.product-content {
+  padding: 22px 20px 20px;
+}
+
+.product-label {
+  margin-bottom: 8px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: #b56b25;
+}
+
+.product-content h3 {
+  font-size: 24px;
+  line-height: 1.15;
+
+  letter-spacing: -0.4px;
+
+  color: #241a14;
+}
+
+.product-description {
+  max-width: 330px;
+
+  margin-top: 9px;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #796d62;
+}
+
+
+/* =========================
+   INCLUDED ITEMS
+========================= */
+
+.product-items {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  border-radius: 16px;
+
+  background: #faf4eb;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #51463d;
+}
+
+.item-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #e8d7c2;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  color: #8c572f;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.product-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-top: 22px;
+}
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.price-label {
+  font-size: 9px;
+
+  color: #94877a;
+}
+
+.product-price strong {
+  font-family: "DM Sans", sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+  color: #241a14;
+}
+
+/* =========================
+   ORDER BUTTON
+========================= */
+
+.product-order-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  border: none;
+  border-radius: 100px;
+
+  background: #241a14;
+  color: #fffaf2;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.product-order-btn span {
+  font-size: 14px;
+}
+
+.product-order-btn:hover {
+  background: #b56b25;
+
+  transform: translateX(2px);
+}
+
+
+/* =========================
+   11 DAYS SPECIAL
+========================= */
+
+.product-card.eleven-days {
+  border-color: rgba(181, 107, 37, 0.22);
+
+  box-shadow:
+    0 15px 45px rgba(181, 107, 37, 0.09);
+}
+
+
+/* =========================
+   MANDAL
+========================= */
+
+.product-card.mandal .product-items {
+  background: #f5f0e9;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .product-card {
+    border-radius: 23px;
+  }
+
+  .product-content {
+    padding: 19px 17px 18px;
+  }
+
+  .product-content h3 {
+    font-size: 22px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+
+  .product-bottom {
+    align-items: center;
+  }
+
+  .product-price strong {
+    font-size: 21px;
+  }
+
+  .product-order-btn {
+    padding: 11px 14px;
+  }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 900px) {
+
+  .product-content {
+    padding: 24px;
+  }
+
+  .product-content h3 {
+    font-size: 25px;
+  }
+}

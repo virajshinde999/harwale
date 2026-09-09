@@ -1,0 +1,5 @@
+export const WHATSAPP_NUMBER = "917720014507";
+
+export const PHONE_NUMBER = "+917720014507";
+
+export const DISPLAY_PHONE = "+91 7720014507";

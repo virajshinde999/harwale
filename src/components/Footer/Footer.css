@@ -1,0 +1,265 @@
+.footer {
+  padding: 70px 18px 20px;
+  background: #201711;
+  color: #fffaf2;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-brand {
+  text-align: center;
+  padding-bottom: 38px;
+}
+
+.footer-brand h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.footer-brand h2 span {
+  color: #d99552;
+}
+
+.footer-brand p {
+  margin-top: 12px;
+  color: #a99a8f;
+  font-size: 11px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   CONTACT BOX
+========================= */
+
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+
+  padding: 10px;
+
+  border: 1px solid rgba(255, 250, 242, 0.1);
+  border-radius: 24px;
+
+  background: rgba(255, 250, 242, 0.035);
+}
+
+/* Contact Item */
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  min-height: 68px;
+  padding: 12px 15px;
+
+  border: 1px solid rgba(255, 250, 242, 0.07);
+  border-radius: 17px;
+
+  background: rgba(255, 250, 242, 0.025);
+
+  color: #fffaf2;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-contact-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(217, 149, 82, 0.28);
+  background: rgba(255, 250, 242, 0.06);
+}
+
+/* Icon */
+
+.footer-contact-item > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(217, 149, 82, 0.2);
+  border-radius: 50%;
+
+  background: rgba(217, 149, 82, 0.08);
+
+  font-size: 15px;
+}
+
+/* Text */
+
+.footer-contact-item div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.footer-contact-item small {
+  margin-bottom: 4px;
+
+  color: #82736a;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.footer-contact-item strong {
+  color: #f9f1e7;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* =========================
+   WHATSAPP CTA
+========================= */
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+
+  margin-top: 35px;
+  padding-top: 28px;
+
+  border-top: 1px solid rgba(255, 250, 242, 0.1);
+}
+
+.footer-bottom p {
+  order: 2;
+
+  color: #74665d;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+.footer-whatsapp {
+  order: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 260px;
+
+  padding: 14px 20px;
+
+  border-radius: 100px;
+
+  background: #fffaf2;
+  color: #201711;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  text-decoration: none;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.footer-whatsapp span {
+  font-size: 15px;
+}
+
+.footer-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 85px 30px 25px;
+  }
+
+  .footer-contact {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-contact-item {
+    min-height: 82px;
+    padding: 15px;
+  }
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 900px) {
+  .footer {
+    padding: 95px 40px 28px;
+  }
+
+  .footer-brand {
+    padding-bottom: 45px;
+  }
+
+  .footer-brand h2 {
+    font-size: 44px;
+  }
+
+  .footer-brand p {
+    font-size: 10px;
+  }
+
+  .footer-contact {
+    gap: 12px;
+    padding: 12px;
+    border-radius: 27px;
+  }
+
+  .footer-contact-item {
+    min-height: 88px;
+    padding: 17px 20px;
+    border-radius: 19px;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 25px;
+  }
+
+  .footer-bottom p {
+    order: 1;
+  }
+
+  .footer-whatsapp {
+    order: 2;
+    width: auto;
+    min-width: 180px;
+  }
+}

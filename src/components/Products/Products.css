@@ -1,0 +1,119 @@
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+.products-section {
+  padding: 75px 0 85px;
+
+  background: #f8f1e7;
+}
+
+.products-container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.products-heading {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  margin-bottom: 35px;
+}
+
+.section-label {
+  margin-bottom: 10px;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #b56b25;
+}
+
+.products-heading h2 {
+  max-width: 500px;
+
+  font-size: clamp(36px, 9vw, 58px);
+
+  line-height: 1.03;
+
+  letter-spacing: -1.7px;
+
+  color: #241a14;
+}
+
+.products-heading h2 span {
+  color: #b56b25;
+
+  font-style: italic;
+
+  font-weight: 500;
+}
+
+.products-intro {
+  max-width: 350px;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: #75685d;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.products-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 22px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 650px) {
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 900px) {
+
+  .products-section {
+    padding: 110px 0;
+  }
+
+  .products-heading {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+  }
+}
