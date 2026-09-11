@@ -12,7 +12,7 @@ const products = [
       "Puja Flowers"
     ],
     priceLabel: "Starting from",
-    price: "₹29",
+    price: "₹59",
     buttonText: "Order Daily",
     image: "/images/daily-combo.png"
   },
@@ -30,7 +30,7 @@ const products = [
       "11 Days Puja Flowers"
     ],
     priceLabel: "Complete 11 Days",
-    price: "₹229",
+    price: "₹549",
     buttonText: "Book 11 Days",
     image: "/images/eleven-days-pack.png"
   },
